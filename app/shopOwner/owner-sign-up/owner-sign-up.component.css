@@ -1,0 +1,117 @@
+.main{
+  background-image: url("../../../assets/bg14.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  background-repeat: no-repeat;
+}
+
+/*start navbar style*/
+nav{
+  width: 100%;
+  height: 53px;
+  background-color: #0003;
+  line-height: 53px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 6mm;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color: darkgreen ;
+
+}
+/*end navbar style*/
+
+.signup-box{
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup-box h2{
+  color: white;
+  border-bottom: 3px solid green;
+  position: center;
+}
+
+.text-box {
+  width: 80%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 5px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid green;
+}
+.text-box p{
+  padding-top: 10px;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+#img{
+  padding-top: 10px;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.text-box input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 25px;
+  width: 95%;
+  float: left;
+  margin: 0 10px;
+}
+
+
+/*#bannerImage{*/
+/*  background-color: white;*/
+/*  width:50%;*/
+/*  height: 30vh;*/
+/*}*/
+
+
+/*=====================*/
+
+.btn{
+  width: 30%;
+  background: none;
+  border: 2px solid green;
+  color: green;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+
+.span{
+  color: red;
+}
+
+
+#previewImg{
+  height: 300px;
+  width: 500px;
+}

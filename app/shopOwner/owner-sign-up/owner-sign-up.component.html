@@ -1,0 +1,89 @@
+<div class="main container-fluid">
+  <div class="row">
+    <nav class="navbar-expand-lg">
+      <ul>
+        <li><a href="#" routerLink="/dashbord">Back</a></li>
+      </ul>
+    </nav>
+    </div>
+
+  <div class="signup-box">
+    <h2>Add Pastry Shop</h2>
+    <form (ngSubmit)="registerShop()" >
+      <div class="row">
+        <div class="col col-sm-12 col-md-4 col-lg-4">
+
+          <div class="form-group">
+            <div class="text-box">
+              <p>Name*</p>
+              <input class="form-control" type="text"  [(ngModel)]="selectedShop.name" name="name">
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-sm-12 col-md-4 col-lg-4">
+
+          <div class="form-group">
+            <div class="text-box">
+              <p>Email Address*</p>
+              <input class="form-control" type="email" name="email" [(ngModel)]="selectedShop.email">
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-sm-12 col-md-4 col-lg-4">
+          <div class="form-group">
+            <div class="text-box">
+              <p>Contact Number*</p>
+              <input type="text" class="form-control" [(ngModel)]="selectedShop.contactNo"  name="contactNo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+
+          <div class="form-group">
+            <div class="text-box">
+              <p>Contact Person Name*</p>
+              <input class="form-control" type="text"  [(ngModel)]="selectedShop.contactPersonName"  name="contactPersonName"   >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="text-box">
+              <p>Password*</p>
+              <input type= "password" class="form-control" name="password" [(ngModel)]="selectedShop.password" >
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+          <p id="img">Pastry Shop Banner Image* </p>
+          <form [formGroup]="uploadForm" >
+            <!-- Select File -->
+            <input type="file" accept="image/*" (change)="showPreview($event)" />
+
+            <!-- Image Preview -->
+            <div class="imagePreview" *ngIf="imageURL && imageURL !== ''">
+              <img id="previewImg" [src]="imageURL" [alt]="uploadForm.value.name">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <input class="btn" type="submit" name="" value="Register as a Pastry Shop">
+      <input class="btn" routerLink="/ownerLogin" type="submit" name="" value="Cancel">
+    </form>
+  </div>
+
+</div>
+
+<app-footer></app-footer>
+
+

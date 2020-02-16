@@ -1,0 +1,361 @@
+/*start background style*/
+#bg{
+  background: url("../../../assets/bg14.jpg");
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*end background style*/
+/*start navbar style*/
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: #0001;
+  line-height: 53px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 6mm;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color: darkgreen ;
+
+}
+/*end navbar style*/
+
+/*start serchBox style*/
+.tb
+{
+  display: table;
+  width: 100%;
+}
+
+.td
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#searchBtn{
+  color: #0b2e13;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+input
+{
+  color: black;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+#cover
+{
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  width: 800px;
+  padding: 35px;
+  margin: -83px auto 0 auto;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px indigo, 0 0 0 20px indigo;
+  transform: scale(0.6);
+}
+
+form
+{
+  height: 75px;
+}
+
+input[type="text"]
+{
+  width: 100%;
+  height: 96px;
+  font-size: 60px;
+  line-height: 1;
+}
+
+input[type="text"]::placeholder
+{
+  color: green;
+}
+
+#s-cover
+{
+  width: 1px;
+  padding-left: 35px;
+}
+
+#searchBtn
+{
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 75px;
+  cursor: pointer;
+}
+
+#s-circle
+{
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid red;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+
+#searchBtn span
+{
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: red;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: red;
+  border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before, #s-cover:hover button span:after
+{
+  right: -6px;
+  width: 40px;
+  background-color: red;
+}
+
+/*end serchBox style*/
+
+/*start right div image style*/
+#div2{
+  width: 100%;
+  height: 92.6vh;
+}
+#div2 img {
+  width: 400px;
+  height: 500px;
+}
+#div2\.1{
+  width: 500px;
+  height: 600px;
+  padding-top: 65px;
+  padding-left: 144px;
+}
+/*end right div image style*/
+
+/*start left div text1*/
+#letter2{
+  font-family: 'Indie Flower';
+  font-size: 9mm;
+  padding-left: 10px;
+}
+
+/*end left div text1*/
+
+/*start left div changing text*/
+
+#letter1:before{
+  content: 'Hungry?';
+  animation: animate infinite 20s;
+  font-size: 50px;
+}
+
+@keyframes animate {
+  0%
+  {
+    content: 'Hungry?';
+  }
+  25%
+  {
+    content: 'Late night at office?';
+  }
+  50%
+  {
+    content: 'Unexpected guest?';
+  }
+  75%
+  {
+    content: 'Cooking gone wrong?';
+  }
+  100%
+  {
+    content: 'Game night?';
+  }
+}
+/*end left div changing text*/
+
+
+/*===============================*/
+/*second row styles*/
+
+#blank{
+  width: 100%;
+  height: 20vh;
+  background-color: red;
+}
+#blankP{
+  font-family: 'Indie Flower', cursive;
+  font-size: 10mm;
+  color: white;
+  padding-left: 40%;
+  padding-top: 2%;
+}
+
+
+/*===================================*/
+/*3rd row styles*/
+
+#p1{
+  font-size: 40px;
+  font-family: "Apple Color Emoji";
+  color: red;
+  padding-top: 20%;
+  padding-left: 15%;
+}
+
+#p1\.1{
+  font-size: 20px;
+  color: black;
+  padding-left: 15%;
+}
+
+#p1\.2{
+  font-size: 25px;
+  padding-left: 15%;
+  color: red;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+}
+section img {
+  width: 100%;
+  height: 550px;
+}
+section article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  mix-blend-mode: lighten;
+}
+section div {
+  background: black;
+  /*height: 19.38vw;*/
+  height: 265px;
+
+}
+section div:nth-of-type(2) {
+  grid-column: 2 / 4;
+}
+
+
+
+/*4th row style*/
+
+#p2{
+  font-size: 40px;
+  font-family: "Apple Color Emoji";
+  color: lightseagreen;
+  padding-top: 20%;
+  padding-left: 10%;
+}
+
+#p2\.1{
+  font-size: 20px;
+  color: black;
+  padding-left: 10%;
+}
+
+#p2\.3{
+  font-size: 25px;
+  padding-left: 10%;
+  color: lightseagreen;
+}
+
+#eatMore{
+  width: 250px;
+  height: 55px;
+  padding-left: 20px;
+}

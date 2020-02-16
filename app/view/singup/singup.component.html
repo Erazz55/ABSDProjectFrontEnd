@@ -1,0 +1,35 @@
+<div id="bg" class="container-fluid">
+  <div class="signup-box">
+    <h3>Sign Up</h3>
+    <form (ngSubmit) = "registration()" #frmUser = "ngForm">
+
+      <div class="form-group" >
+        <div class="textBox">
+          <i class="fas fa-user"></i>
+          <input type="text" class="form-control" [(ngModel)]="selectedUser.username" placeholder="Enter username:" name="username" value="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="textBox">
+          <i class="fas fa-envelope"></i>
+          <input type="email" class="form-control" [(ngModel)]="selectedUser.email" placeholder="Enter email:" name="email" value="" >
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <div class="textBox">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="form-control" [(ngModel)]="selectedUser.password" placeholder="Enter password:" name="password" value="" >
+        </div>
+      </div>
+
+      <input class="btn" type="submit" name="" value="Sign Up">
+
+      <input id="cancelBtn" class="btn" href="#" routerLink="/login" type="button" name="" value="Cancel">
+
+    </form>
+
+  </div>
+
+</div>

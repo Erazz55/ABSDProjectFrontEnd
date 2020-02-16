@@ -1,0 +1,45 @@
+<div>
+  <!--navbar start-->
+  <div class="row">
+    <nav class="navbar-expand-lg">
+      <img src="../../../assets/eatMore.png" id="eatMore" alt="">
+      <ul>
+        <li><a href="#" >User Name</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--  navbar end-->
+
+  <div class="row secondRow">
+    <div class="col col-sm-12 col-md-1 col-lg-1"></div>
+    <div class="col col-sm-12 col-md-10 col-lg-10">
+      <div class="grid">
+        <div  id="itemCard" *ngFor="let shopDto of shops">
+          <div class="sample-column card-wrapper">
+            <igx-card type="outlined">
+
+              <igx-card-media height="35vh">
+                <img src="../../../assets/image4thRow.jpg" alt="">
+              </igx-card-media>
+
+              <igx-card-header>
+                <h5 igxCardHeaderTitle>{{shopDto.name}}</h5>
+              </igx-card-header>
+
+              <igx-card-actions>
+                <button igxButton="">Add Cart</button>
+              </igx-card-actions>
+            </igx-card>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col col-sm-12 col-md-1 col-lg-1"></div>
+    <div class="col col-sm-12 col-md-1 col-lg-1"></div>
+
+
+  </div>
+
+</div>

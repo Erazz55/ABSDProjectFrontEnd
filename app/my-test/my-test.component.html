@@ -1,0 +1,25 @@
+<p>Test</p>
+
+<!--<form [formGroup] = "imageUploadForm" (ngSubmit)="upload()">-->
+<!--  <div class="form-group">-->
+<!--    <input type="file" accept="image/*" id="imageUpload" #fileInput (change) = "uploadFile($event)">-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Submit Button &ndash;&gt;-->
+<!--  <button type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()">Upload Image</button>-->
+<!--</form>-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h3>Choose File</h3>
+      <form  enctype="multipart/form-data">
+        <div></div>
+        <input type="text" placeholder="name" name="name" [(ngModel)]="selectedFile.name">
+        <div class="form-group">
+          <input type="button" (click)="onSubmit()" value="upload">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

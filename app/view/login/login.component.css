@@ -1,0 +1,104 @@
+#bg{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/bg14.jpg");
+  background-size: cover;
+}
+
+/*start navbar style*/
+nav{
+  width: 100%;
+  height: 68px;
+  background-color: #0001;
+  line-height: 53px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 6mm;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color: darkgreen ;
+
+}
+/*end navbar style*/
+
+
+.login-box {
+  width: 700px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: lightseagreen;
+}
+.login-box h3{
+  float: left;
+  font-size: 40px;
+  border-bottom:6px solid green;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textBox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid green;
+}
+
+.textBox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 23px;
+  width: 92%;
+  float: left;
+  margin: 0 18px;
+}
+
+.btn{
+  width: 30%;
+  background: none;
+  border: 2px solid green;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+#cancelBtn{
+  color: white;
+  float: right;
+
+}
+
+.login-box i{
+  width: 5px;
+  float: left;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+}
+
+#eatMore{
+  width: 250px;
+  height: 60px;
+  padding-left: 20px;
+}

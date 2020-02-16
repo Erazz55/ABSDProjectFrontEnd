@@ -1,0 +1,70 @@
+<div id="bg">
+<div class="row">
+  <div class="col col-sm-12 col-lg-2 col-lg-2">
+    <!-- Start side bar-->
+    <div id="sideBar">
+      <ul>
+        <li><a (click)="goToProfile()">Profile</a></li>
+        <li><a>View Items</a></li>
+        <li><a (click)="goToAddItem()">Add Item</a></li>
+        <li><a (click)="goToDeleteItem()">Delete Item</a></li>
+        <li>Update Item</li>
+        <li>Earnings Reports</li>
+        <li>Settings</li>
+        <li>Log Out</li>
+      </ul>
+    </div>
+    <!-- End side bar-->
+  </div>
+  <div class="col col-sm-12 col-md-10 col-lg-10">
+
+    <div class="itemCards">
+      <div id="itemCard" *ngFor="let item of items">
+        <div class="sample-column card-wrapper">
+          <igx-card type="outlined">
+
+            <igx-card-media height="15vh">
+              <img src="../../../assets/image4thRow.jpg" alt="">
+            </igx-card-media>
+
+            <igx-card-header>
+              <h5 igxCardHeaderTitle>{{item.itemName}}</h5>
+              <h5 igxCardHeaderSubtitle>LKR {{item.itemPrice}}.00</h5>
+            </igx-card-header>
+
+            <igx-card-actions>
+              <button igxButton=""></button>
+            </igx-card-actions>
+          </igx-card>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+<!--  <table class="table table-hover table-bordered">-->
+<!--    <tr>-->
+<!--      <th>Item name</th>-->
+<!--      <th>Price</th>-->
+<!--    </tr>-->
+<!--    <tr *ngFor="let item of items">-->
+<!--      <div class="sample-column card-wrapper">-->
+<!--          <igx-card type="outlined">-->
+<!--            <igx-card-header>-->
+<!--              <h5 igxCardHeaderTitle>{{item.itemName}}</h5>-->
+<!--              <h5 igxCardHeaderSubtitle>{{item.itemPrice}}</h5>-->
+<!--            </igx-card-header>-->
+<!--          </igx-card>-->
+
+<!--          <igx-divider class="divider"></igx-divider>-->
+<!--      </div>-->
+<!--    </tr>-->
+<!--  </table>-->
+</div>

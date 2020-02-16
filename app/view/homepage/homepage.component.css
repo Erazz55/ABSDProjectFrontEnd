@@ -1,0 +1,51 @@
+/*start navbar style*/
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: #0003;
+  line-height: 53px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 6mm;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color: darkgreen ;
+
+}
+/*end navbar style*/
+
+
+
+igx-card {
+  width: 100%;
+  height: 55vh;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+#eatMore{
+  width: 250px;
+  height: 60px;
+  padding-left: 20px;
+}

@@ -1,0 +1,68 @@
+/*#bg{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-image: url("../../../assets/bg14.jpg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*}*/
+/*side bar*/
+#sideBar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: black;
+  padding: 30px 0;
+}
+#sideBar ul li{
+  color: rgba(230,230,230,0.9);
+  list-style: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(225,225,225,0.05);
+}
+
+#sideBar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+#sideBar ul li a .fas{
+  width: 25px;
+}
+
+#sideBar ul li:hover{
+  background: #28a745;
+}
+
+#sideBar ul li:hover a{
+  color: #fff;
+}
+
+/*side bar*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*end navbar style*/
+
+
+
+igx-card {
+  width: 90%;
+  height: 30vh;
+}
+
+#itemCard{
+  //padding: 25px;
+}
+
+.itemCards{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
